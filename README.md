@@ -1,31 +1,31 @@
 # Gender and Age Detection
 
-This is a program that uses OpenCV and Deep Learning to detect the age and gender of a person. The program can work on a single image or a video stream and can detect the age and gender of each individual.
+## About the Project :
+This project utilizes OpenCV and Deep Learning to accurately detect a person's age and gender from a single image of their face. The program can process both single images and video streams, providing age and gender predictions for each individual.
 
-## How to Use
+In this Python project, I employed Deep Learning techniques to precisely determine a person's gender and age based on a single facial image. I utilized models trained by Tal Hassner and Gil Levi for this purpose. The predicted gender can be either 'Male' or 'Female', and the predicted age falls into one of the following ranges: (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (with 8 nodes in the final softmax layer).
 
-Follow the steps below to run the program:
+Accurately estimating an exact age from a single image is challenging due to various factors such as makeup, lighting conditions, obstructions, and facial expressions. Therefore, I formulated this as a classification problem rather than a regression one.
+## Additional Python Libraries Required :
+- OpenCV
+`   pip install opencv-python`
+-argparse
+`  pip install argparse`
+##The contents of this Project :
+-opencv_face_detector.pbtxt
+-opencv_face_detector_uint8.pb
+-age_deploy.prototxt
+-age_net.caffemodel
+-gender_deploy.prototxt
+-gender_net.caffemodel
+-a few pictures to try the project on
+-detect.py
+For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .Working: file defines the internal states of the parameters of the layers.
+ ## Working:
+ 
+![İmages](https://github.com/beyzaokutucu/Age_Gender/blob/main/Age_Gender/Example/example.png)
+## Examples :
+`Gender: Female
+<br>
 
-1. Install Required Libraries
-
-First, install OpenCV and other dependencies in Python:
-pip install opencv-python-headless numpy
-
-
-2. Run the Code
-
-To run the program, use the following command:
-python detect.py --image image.jpg
-
-or to run it on a video:
-python detect.py --video video.mp4
-
-
-3. View the Results
-
-The program will display the results and show the age and gender of each person on the screen.
-
-## Parameters
-
-- `--image`: Specifies the path to an image file.
-- `--video`: Specifies the path to a video file.
+Age: 25-32 years`
