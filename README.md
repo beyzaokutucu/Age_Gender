@@ -7,25 +7,46 @@ In this Python project, I employed Deep Learning techniques to precisely determi
 
 Accurately estimating an exact age from a single image is challenging due to various factors such as makeup, lighting conditions, obstructions, and facial expressions. Therefore, I formulated this as a classification problem rather than a regression one.
 ## Additional Python Libraries Required :
-- OpenCV
-`   pip install opencv-python`
--argparse
-`  pip install argparse`
-##The contents of this Project :
--opencv_face_detector.pbtxt
--opencv_face_detector_uint8.pb
--age_deploy.prototxt
--age_net.caffemodel
--gender_deploy.prototxt
--gender_net.caffemodel
--a few pictures to try the project on
--detect.py
-For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .Working: file defines the internal states of the parameters of the layers.
+- OpenCV <br/>
+
+
+`   pip install opencv-python` <br/>
+
+
+-argparse <br/>
+
+
+`  pip install argparse` <br/>
+
+
+## The contents of this Project :
+- opencv_face_detector.pbtxt
+- opencv_face_detector_uint8.pb
+- age_deploy.prototxt
+- age_net.caffemodel
+- gender_deploy.prototxt
+- gender_net.caffemodel
+- a few pictures to try the project on
+- detect.py <br/>
+
+
+For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .Working: file defines the internal states of the parameters of the layers. <br/>
+
+
  ## Working:
  
 ![İmages](https://github.com/beyzaokutucu/Age_Gender/blob/main/Age_Gender/Example/example.png)
 ## Examples :
-`Gender: Female
-<br>
+ 
+`  Gender: Female  
+Age: 25-32 years `
 
-Age: 25-32 years`
+
+
+![İmages](https://github.com/beyzaokutucu/Age_Gender/blob/main/Age_Gender/Example/example2.png) <br>
+
+
+## Examples :
+`Gender: Female`
+
+`Age: 25-32 years`
