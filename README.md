@@ -7,16 +7,16 @@ In this Python project, I employed Deep Learning techniques to precisely determi
 
 Accurately estimating an exact age from a single image is challenging due to various factors such as makeup, lighting conditions, obstructions, and facial expressions. Therefore, I formulated this as a classification problem rather than a regression one.
 ## Additional Python Libraries Required :
-- OpenCV <br/>
+- OpenCV 
 
 
-`   pip install opencv-python` <br/>
+```   pip install opencv-python ```
 
 
--argparse <br/>
+-argparse 
 
 
-`  pip install argparse` <br/>
+```  pip install argparse ```
 
 
 ## The contents of this Project :
@@ -38,15 +38,17 @@ For face detection, we have a .pb file- this is a protobuf file (protocol buffer
 ![İmages](https://github.com/beyzaokutucu/Age_Gender/blob/main/Age_Gender/Example/example.png)
 ## Examples :
  
-`  Gender: Female  
-Age: 25-32 years `
-
+```
+Gender: Female  
+Age: 25-32 years
+```
 
 
 ![İmages](https://github.com/beyzaokutucu/Age_Gender/blob/main/Age_Gender/Example/example2.png) <br>
 
 
 ## Examples :
-`Gender: Female`
-
-`Age: 25-32 years`
+```
+Gender: Female
+Age: 25-32 years
+```
